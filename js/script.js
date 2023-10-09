@@ -26,9 +26,9 @@ let price_o65 = 0.21 * 3 / 5;  //price with -40% discount
 
 
 if (age < 18){
-  document.getElementById('ticket_price').innerHTML += (km * price_u18);
+  document.getElementById('ticket_price').innerHTML += (km * price_u18).toFixed(2);
 } else if ((age >= 18) && (age < 65)){
-  document.getElementById('ticket_price').innerHTML += (km * price_km);
+  document.getElementById('ticket_price').innerHTML += (km * price_km).toFixed(2);
 } else if (age > 65){
-  document.getElementById('ticket_price').innerHTML += (km * price_o65);
+  document.getElementById('ticket_price').innerHTML += (km * price_o65).toFixed(2);
 }
