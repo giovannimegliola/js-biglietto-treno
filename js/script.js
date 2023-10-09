@@ -14,8 +14,13 @@
 */
 
 
-let km = prompt ('Insert travel kilometres');
-let age = prompt('Insert passenger age');
+let km = parseInt(prompt ('Insert travel kilometres'));
+let age = parseInt(prompt('Insert passenger age'));
+let myDiv = document.getElementById('text');
+
+if (isNaN(km) || isNaN (age)){
+  myDiv.innerHTML = 'You must insert numbers!';
+}
 
 document.getElementById('km').innerHTML += ` ${km}`;
 document.getElementById('age').innerHTML += ` ${age}`;
